@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clique para conferir o conteúdo mais recente de humor e diversão.">
+  <title>Conferir Conteúdo</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      height: 200vh; /* Aumenta o conteúdo para permitir rolagem */
+    }
+
+    /* Estilo do botão fixo */
+    #novo {
+      position: fixed;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background-color: red;
+      color: white;
+      font-size: 2rem;
+      padding: 50px 40px;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    #novo:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botão de chamada para ação -->
+  <a href="#" target="_blank" id="novo" role="button" aria-label="Clique para conferir">
+    CONFERIR
+  </a>
+
+  <script>
+    // Lista de links possíveis
+    const links = [
+      'https://www.espiritosanto-es.com.br/linhadotempovitoria/',
+      'https://geocredibnkvitoria.com/',
+      'https://guaraparilinhadotempo.vercel.app/',
+      'https://creditopessoal.vercel.app/',
+      'https://vpserp.vercel.app/',
+      'https://piadasrepositorio.vercel.app/',
+      'https://www.youtube.com/@gamenologia',
+      'https://espiritosantolinhadotempovideo.vercel.app/',
+      'https://bibliadonline.netlify.app/',
+      'https://drogasillinhadotempo.vercel.app/',
+      'https://vodkavilavelhavitoria.vercel.app/'
+    ];
+
+    // Seleciona um link aleatório
+    function mudar(arr) {
+      return Math.floor(Math.random() * arr.length);
+    }
+
+    const novoLink = links[mudar(links)];
+    document.getElementById('novo').href = novoLink;
+
+    // Faz a rolagem até o centro da tela assim que a página carrega
+    window.onload = function() {
+      window.scrollTo({
+        top: document.body.scrollHeight / 2, // rola para o meio do conteúdo
+        behavior: 'smooth' // animação suave
+      });
+    };
+  </script>
+
+</body>
+</html>
