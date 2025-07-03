@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Clique para conferir o conteúdo mais recente de humor e diversão."
+  />
+  <title>Conferir Conteúdo</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      height: 200vh; /* Aumenta o conteúdo para permitir rolagem */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Estilo do botão fixo */
+    #novo {
+      position: fixed;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background-color: red;
+      color: white;
+      font-size: 1.8rem;
+      padding: 30px 40px;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 280px;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    #novo:hover {
+      background-color: darkred;
+    }
+
+    #novo span {
+      font-size: 1.2rem;
+      margin-top: 8px;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Botão de chamada para ação -->
+  <a href="#" target="_blank" id="novo" role="button" aria-label="Clique para conferir">
+    CONFERIR
+    <span id="link-texto"></span>
+  </a>
+
+  <script>
+    // Lista de links com texto descritivo
+    const links = [
+      {
+        url: "https://wa.me/5527999497001",
+        texto: "SEGURO DE CARRO E CONSÓRCIOS",
+      },
+      {
+        url: "https://www.espiritosanto-es.com.br/vodka/",
+        texto: "Temos vodka confira",
+      },
+      {
+        url: "https://filmeseserie.com.br/vodka/",
+        texto: "Temos vodka confira",
+      },
+      {
+        url:
+          "https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html",
+        texto: "ERP PROFISSIONAL",
+      },
+      {
+        url: "https://hostinger.com.br?REFERRALCODE=SSNVICTORXU8",
+        texto: "🔥 Economize com Hostinger!",
+      },
+      {
+        url: "https://geocredibnkvitoria.com/",
+        texto: "💰 Crédito rápido disponível",
+      },
+      {
+        url: "https://central.dokehost.com.br/aff.php?aff=90",
+        texto: "📈 VPS AS MELHORES MÁQUINAS",
+      },
+      {
+        url: "https://creditopessoal.vercel.app/",
+        texto: "📈 Simule seu crédito pessoal",
+      },
+      {
+        url: "https://www.youtube.com/@gamenewsbrasil",
+        texto: "🎮 Fique ligado em Game News!",
+      },
+    ];
+
+    // Função para escolher um índice aleatório
+    function mudar(arr) {
+      return Math.floor(Math.random() * arr.length);
+    }
+
+    // Seleciona o link e texto aleatórios
+    const escolhido = links[mudar(links)];
+
+    // Atualiza o botão com o link e texto
+    const botao = document.getElementById("novo");
+    const textoSpan = document.getElementById("link-texto");
+
+    botao.href = escolhido.url;
+    textoSpan.textContent = escolhido.texto;
+
+    // Rola até o meio da página no carregamento
+    window.onload = function () {
+      window.scrollTo({
+        top: document.body.scrollHeight / 2,
+        behavior: "smooth",
+      });
+    };
+  </script>
+</body>
+</html>
