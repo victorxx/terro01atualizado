@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Metadados básicos para SEO e idioma -->
+  <meta name="language" content="pt-BR" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Seu Nome" />
+  <meta name="designer" content="Seu Nome" />
+  <meta name="publisher" content="Seu Canal de Terror" />
+  <meta name="description" content="Vídeos de terror originais e assustadores. Prepare-se para sentir medo com conteúdo brasileiro feito por mim!" />
+  <meta name="keywords" content="vídeos de terror, horror brasileiro, vídeos assustadores, conteúdo sombrio, medo, suspense, canal de terror" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="canonical" href="https://www.seusite.com.br/terror" />
+
+  <!-- Open Graph para redes sociais -->
+  <meta property="og:type" content="video.other" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://www.seusite.com.br/terror" />
+  <meta property="og:title" content="Vídeos de Terror Assustadores e Originais" />
+  <meta property="og:description" content="Assista aos vídeos de terror mais perturbadores e sombrios. Conteúdo original feito por mim." />
+  <meta property="og:image" content="https://www.seusite.com.br/thumbs/terrorvideo.jpg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta property="og:site_name" content="Canal do Terror" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vídeos de Terror Assustadores e Originais" />
+  <meta name="twitter:description" content="Assista aos vídeos mais macabros e originais. Medo garantido!" />
+  <meta name="twitter:image" content="https://www.seusite.com.br/thumbs/terrorvideo.jpg" />
+  <meta name="twitter:creator" content="@canaldoterror" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.seusite.com.br/favicon.ico" type="image/x-icon" />
+
+  <!-- Dados estruturados JSON-LD para SEO de vídeo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Vídeo de Terror Original",
+    "description": "Um vídeo original e aterrorizante criado por mim. Prepare-se para o medo!",
+    "thumbnailUrl": "https://www.seusite.com.br/thumbs/terrorvideo.jpg",
+    "uploadDate": "2025-06-25T08:00:00+00:00",
+    "contentUrl": "https://www.seusite.com.br/videos/terror1.mp4",
+    "embedUrl": "https://www.seusite.com.br/terror",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Canal do Terror",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.seusite.com.br/logo_terror.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- Título da página -->
+  <title>Vídeos de Terror Assustadores e Originais - Medo Garantido</title>
+
+  <!-- Estilos CSS -->
+  <style>
+    /* Corpo da página: fonte, cores, margens */
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cabeçalho com fundo escuro e texto vermelho */
+    header {
+      background-color: #111;
+      color: #ff0000;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Container principal dos vídeos */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    /* Títulos com fonte Impact e cor vermelha */
+    h1, h2 {
+      font-family: 'Impact', sans-serif;
+      color: #ff0000;
+    }
+
+    /* Vídeos responsivos com bordas arredondadas */
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    /* Estilo para o texto de última atualização */
+    #atualizacao {
+      text-align: center;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #bbb;
+    }
+
+    /* Rodapé simples com texto claro */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Anúncio piscante fixo na tela */
+    #ads {
+      position: fixed;
+      bottom: 100px;
+      left: 20%;
+      background-color: #d62300;
+      color: white;
+      font-size: large;
+      padding: 40px;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      z-index: 999;
+      animation: blink 1s infinite;
+      box-shadow: 0 0 15px red;
+    }
+
+    /* Estilo do iframe dentro do anúncio */
+    #ads iframe {
+      width: 200px;
+      height: 150px;
+      border: none;
+    }
+
+    /* Botão de fechar o anúncio */
+    #fechar {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: 16px;
+      padding: 2px 6px;
+      cursor: pointer;
+    }
+
+    /* Animação de piscar para o anúncio */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* Container para mostrar a string aleatória gerada */
+    #stringUnica {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #111;
+      color: #0f0; /* Verde neon */
+      font-family: monospace;
+      word-break: break-word; /* Quebra linhas para evitar overflow */
+      border: 2px dashed red;
+      box-shadow: 0 0 10px red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho principal -->
+  <header>
+    <h1>Vídeos de Terror Originais</h1>
+    <p>Assista, sinta o medo e compartilhe o horror!</p>
+  </header>
+
+  <!-- Div para mostrar data de última atualização -->
+  <div id="atualizacao"></div>
+
+  <!-- Container onde os vídeos serão inseridos via JS -->
+  <div id="videos"></div>
+
+  <!-- Anúncio fixo piscante com botão para fechar -->
+  <div id="ads">
+    <button id="fechar" onclick="document.getElementById('ads').style.display='none'">X</button>
+    <iframe src="link.html"></iframe>
+  </div>
+
+  <!-- Rodapé simples -->
+  <footer>
+    <p>&copy; atualizado eternamente.</p>
+  </footer>
+
+  <!-- Container para mostrar a string aleatória gerada (visível) -->
+  <div id="stringUnica"></div>
+
+  <!-- Scripts JavaScript -->
+  <script>
+    // Atualiza o campo de data com a data atual formatada pt-BR
+    const dataAtual = new Date();
+    const opcoes = { day: '2-digit', month: '2-digit', year: 'numeric' };
+    document.getElementById("atualizacao").textContent =
+      "Última atualização: " + dataAtual.toLocaleDateString('pt-BR', opcoes);
+
+    // Lista de vídeos: título, src do vídeo e imagem de poster
+    const listaVideos = [
+      {
+        titulo: "NÃO OLHE",
+        src: "https://rr4---sn-bg0s7nl6.googlevideo.com/videoplayback?expire=1751534265&ei=WfZlaKa5EJ6V4t4P4r3cyA4&ip=103.167.131.81&id=o-ADOAIf9bB9r2twG41bOLOcoHZtrOp4qI--BTcU2lzFPA&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AY1jyLPCNiGdHawtEVzWsCLzK9oKbYlNHbrnaMHdiqm4A-pzWz-1q479ApqsS2enjCa9IQ_L_8X0XZCR&spc=l3OVKYV5i2phdEasR8rvREaZ4Rbu0MMia_WybJL40x24rc9FMIgT56gjrjxbKa1v2eb4UA&vprv=1&svpuc=1&mime=video%2Fmp4&ns=p1py4dpYfeyt670I-ZT2vbsQ&rqh=1&gir=yes&clen=146742605&ratebypass=yes&dur=4579.207&lmt=1748274517137551&fexp=24350590,24350737,24350827,24350961,24351316,24351318,24351528,24351907,24352220,24352236,24352258,24352262,24352274,24352278,24352322,24352334,24352335,24352394,24352396,24352456,24352460,24352466,24352517,24352519,51331020&c=MWEB&sefc=1&txp=5319224&n=xehh4r--j8GN6Q&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgA9XO9GPQro8CSDP4BqJVZKygPsl99NiAP8JSCQvAErwCIQDMJ4Iy5l8qSWamN-OA_up3mZfv8I-xYWXQWcXWSKCTWQ%3D%3D&title=N%C3%83O%20OLHE%20-%20Filme%20completo%20de%20Terror%20e%20suspense%20dublado%20full%20HD%202025&rm=sn-o5835gn02xguxji-cvhe7z&rrc=79,80&req_id=7945271a754ba3ee&cmsv=e&redirect_counter=2&cm2rm=sn-cvhss7s&cms_redirect=yes&met=1751512670,&mh=je&mip=2804:14d:b083:8b5d:4f:5068:4288:2a8d&mm=34&mn=sn-bg0s7nl6&ms=ltu&mt=1751512354&mv=m&mvi=4&pl=48&rms=ltu,au&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgHXb2sVqwsLx76JWqCrnAyuB5GY8kAZxLu0_nLKwXUaYCIB-Z4rEMvJUyX7V_sa_883uIFY7m86StHKAVXQjOmLXn",
+        poster: "https://www.seusite.com.br/thumbs/terrorvideo.jpg"
+      },
+      // Você pode adicionar mais objetos de vídeo aqui
+    ];
+
+    // Seleciona o container onde os vídeos serão adicionados
+    const container = document.getElementById("videos");
+
+    // Para cada vídeo na lista, cria elementos e adiciona ao container
+    listaVideos.forEach(video => {
+      const main = document.createElement("main"); // Container principal do vídeo
+
+      const h2 = document.createElement("h2"); // Título do vídeo
+      h2.textContent = video.titulo;
+
+      const videoTag = document.createElement("video"); // Tag vídeo com controles
+      videoTag.setAttribute("controls", "");
+      videoTag.setAttribute("poster", video.poster);
+
+      const source = document.createElement("source"); // Fonte do vídeo
+      source.setAttribute("src", video.src);
+      source.setAttribute("type", "video/mp4");
+
+      videoTag.appendChild(source); // Adiciona fonte ao vídeo
+      main.appendChild(h2);         // Adiciona título ao container
+      main.appendChild(videoTag);   // Adiciona vídeo ao container
+      container.appendChild(main);  // Adiciona container ao DOM
+    });
+
+    // Função para gerar string aleatória com caracteres variados
+    function gerarStringUnica(tamanho) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}      |;:,.<>?';
+      let resultado = '';
+      for (let i = 0; i < tamanho; i++) {
+        resultado += chars[Math.floor(Math.random() * chars.length)];
+      }
+      return resultado;
+    }
+
+    // Seleciona o container para exibir a string única
+    const stringUnicaDiv = document.getElementById("stringUnica");
+    // Gera e define a string aleatória de 320 caracteres
+    stringUnicaDiv.textContent = gerarStringUnica(320);
+
+  </script>
+
+</body>
+</html>
